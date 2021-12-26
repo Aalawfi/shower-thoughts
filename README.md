@@ -1,5 +1,5 @@
 # shower-thoughts
-This app pulls posts from the subreddit r/Showerthoughts and send a SMS message to a user of a currently popular shower thought.
+This app pulls posts from the subreddit r/Showerthoughts and sends a SMS message of a currently popular shower thought to a user.
 User Interface: Kivy 
 Back-end: Django 
 Database: mySQL 
