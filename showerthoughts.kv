@@ -1,4 +1,32 @@
 #:kivy 2.0.0
-<FloatLayout> 
+<Layout> 
+    cols:1
 
-   
+    Label: 
+        text:"Shower Thoughts"
+        font_size:'20sp'
+    
+    Label: 
+        text:"First Name"
+        font_size:'15sp'
+    TextInput:
+        multiline: False 
+        height: self.minimum_height
+
+    Label: 
+        text:"Last Name"
+        font_size:'15sp'
+    TextInput:
+        multiline: False 
+        height: self.minimum_height
+
+    Label: 
+        text:"Phone Number"
+        font_size:'15sp'
+    TextInput:
+        multiline: False 
+        height: self.minimum_height
+    Button: 
+        size: self.texture_size
+        text: "Submit"
+
