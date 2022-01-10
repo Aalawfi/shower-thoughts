@@ -1,10 +1,10 @@
 #:kivy 2.0.0
 <Layout> 
     cols:1
-    
     first_name: first_name_id 
     last_name: last_name_id 
     phone_number: phone_number_id
+
     Label: 
         text:"Shower Thoughts"
         font_size:'20sp'
@@ -12,30 +12,39 @@
     Label: 
         text:"First Name"
         font_size:'15sp'
-    TextInput:
+    MyTextInput:
         id: first_name_id 
-        multiline: False 
-        height: self.minimum_height
-        size_hint: (.2, None)
+        multiline: False
+        size_hint:(None,None)
+        size:(self.minimum_width, self.minimum_height)
+        write_tab: False
+        on_text_validate: root.foo()
+
 
     Label: 
         text:"Last Name"
         font_size:'15sp'
         
-    TextInput:
+    MyTextInput:
         id: last_name_id
-        multiline: False 
-        height: self.minimum_height
-        size_hint: (.2, None)
+        multiline: False
+        size_hint:(None,None)
+        size:(self.minimum_width, self.minimum_height)
+        write_tab: False
+        on_text_validate: root.foo()
 
     Label: 
         text:"Phone Number"
         font_size:'15sp'
-    TextInput:
+    MyTextInput:
         id: phone_number_id
-        multiline: False 
-        height: self.minimum_height
-        size_hint: (.2, None)
+        multiline: False
+        size_hint:(None,None)
+        size:(self.minimum_width, self.minimum_height)
+        write_tab: False
+        on_text_validate: root.foo()
+
+        
     Button: 
         size: self.texture_size
         text: "Submit"
